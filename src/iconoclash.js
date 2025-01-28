@@ -266,7 +266,7 @@
 
 		// write one svg sprite, by default
 		if( !config.writeIndividualFiles ){
-			fs.writeFileSync(this.output + config.iconsvg, sprites);
+			fs.writeFileSync(this.output + config.iconsvg, sprites.toString());
 		}
 		// or if not, write out individual files by teasing them out of the sprite and making new ones
 		// this could be more efficient I'm sure. But the approach is helpful because having them all in the sprite to start helps in exposing shared props
